@@ -1363,3 +1363,75 @@ body {
   top: 46%;
   right: -12%;
 }
+
+/* NAVEGACION RESPONSIVE */
+
+.navbar__mobile-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-btn__wrap {
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--color-text-body);
+  border: none;
+  border-radius: 3.2rem;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-btn__line {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: var(--color--secondary);
+  margin-bottom: 0.4rem;
+  border-radius: 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.mobile-btn__line:last-child {
+  width: 1rem;
+  margin-bottom: 0;
+  margin-right: -1rem;
+}
+
+.menu-mobile {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 30rem;
+  height: 100%;
+  background-color: var(--color--secondary);
+  padding: 5rem 1rem;
+  padding-top: 0;
+  box-shadow: 0px 0px 85px -35px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  transition: all 800ms ease-in-out;
+}
+
+.menu-mobile__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0rem 1rem;
+  padding: 2rem 0rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-mobile__container-logo {
+  width: 15rem;
+}
+
+.menu-mobile__link-logo {
+  display: inline-block;
+}
