@@ -14,13 +14,29 @@
     <!-- CARGAR ESTILOS -->
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="assets/css/dark.css" /> -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <!-- CARGAR JS -->
     <script src="assets/js/menu-mobile.js"></script>
+    <script src="assets/js/navbar-fixed.js"></script>
+    <script src="assets/js/dark.js"></script>
     <title>Agencia de desarrollo web | wiquiweb</title>
   </head>
 
   <body>
+    <!-- BOTON MODO OSCURO -->
+    <div class="switcher">
+      <button class="switcher__btn">
+        <span class="switcher__icon-light">
+          <i class="switcher__icon fa-solid fa-moon"></i>
+        </span>
+        <span class="switcher__icon-dark">
+          <i class="switcher__icon fa-solid fa-lightbulb"></i>
+        </span>
+      </button>
+    </div>
+    <!-- FIN DEL BOTON MODO OSCURO -->
+
     <!-- MENU NAVEGACION RESPONSIVE -->
     <div class="menu-mobile">
       <header class="menu-mobile__header">
@@ -138,11 +154,11 @@
             </li>
 
             <li class="menu-mobile__item">
-              <a href="#" class="nav__link">Equipo</a>
+              <a href="#" class="menu-mobile__link">Equipo</a>
             </li>
 
             <li class="menu-mobile__item">
-              <a href="#" class="nav__link">Contacto</a>
+              <a href="#" class="menu-mobile__link">Contacto</a>
             </li>
           </ul>
         </nav>
